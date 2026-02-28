@@ -1,0 +1,47 @@
+/* Webgune osoaren oinarrizko itxura */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Atzealde gris argi polita */
+    color: #333;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50; /* Izenburu urdin iluna */
+}
+
+/* Zerrendaren itxura (puntutxoak kendu eta txartelak lerrokatu) */
+#liburu-zerrenda ul {
+    list-style-type: none; 
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Txartelak pantailara egokitzeko */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Liburu bakoitzaren "Txartela" */
+#liburu-zerrenda li {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px; /* Ertz borobilduak */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Itzal leuna */
+    width: 250px; 
+    transition: transform 0.3s ease; /* Animazio leuna */
+}
+
+/* Sagua gainetik pasatzean txartela altxatzeko efektua */
+#liburu-zerrenda li:hover {
+    transform: translateY(-8px);
+}
+
+/* Liburuaren izenburua nabarmendu */
+#liburu-zerrenda strong {
+    display: block; /* Izenburua bere lerro propioan jartzeko */
+    font-size: 1.3em;
+    color: #2980b9; /* Urdin argiagoa */
+    margin-bottom: 10px;
+}
