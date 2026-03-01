@@ -30,9 +30,14 @@ async function datuakKargatu() {
                 const izenburua = zutabeak[0];
                 const egilea = zutabeak[1];
                 const urtea = zutabeak[2];
+                const generoa = zutabeak[3];
                 
                 // HTML formatuan gehitu zerrendara
-                htmlEdukia += `<li><strong>${izenburua}</strong> - ${egilea} (${urtea})</li>`;
+                htmlEdukia += `<li>
+                                  <strong>${izenburua}</strong> 
+                                  - ${egilea} (${urtea}) <br> 
+                                  <span style="color: #7f8c8d; font-size: 0.9em;">Generoa: ${generoa}</span>
+                               </li>`;
             }
         }
         
