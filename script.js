@@ -55,3 +55,21 @@ async function datuakKargatu() {
 
 // 7. Funtzioa martxan jarri!
 datuakKargatu();
+// 3. Iragazkiaren funtzioa (BERRIA)
+function liburuakIragazi() {
+    // 1. Zer aukeratu dugu menuan?
+    const aukeratutakoGeneroa = document.getElementById('generoa-aukeratu').value;
+    
+    // 2. Hartu pantailako liburu (txartel) guztiak
+    const txartelak = document.querySelectorAll('#liburu-zerrenda li');
+    
+    // 3. Banan-banan begiratu
+    txartelak.forEach(txartela => {
+        // Txartelaren barruko testuak aukeratutako generoa badu (edo "Guztiak" bada)
+        if (aukeratutakoGeneroa === 'Guztiak' || txartela.innerHTML.includes(aukeratutakoGeneroa)) {
+            txartela.style.display = 'block'; // Erakutsi
+        } else {
+            txartela.style.display = 'none'; // Ezkutatu
+        }
+    });
+}
