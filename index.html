@@ -9,6 +9,15 @@
 <body>
 
     <h1>Nire Liburu Gogokoenak</h1>
+    <div id="iragazki-kutxa">
+        <label>Aukeratu generoa: </label>
+        <select id="generoa-aukeratu" onchange="liburuakIragazi()">
+            <option value="Guztiak">Guztiak</option>
+            <option value="Fantastikoa">Fantastikoa</option>
+            <option value="Abenturak">Abenturak</option>
+            <option value="Thriller">Thriller</option>
+        </select>
+    </div>
     <p>Datuak Google Sheets-etik kargatzen...</p>
 
     <div id="liburu-zerrenda"></div>
